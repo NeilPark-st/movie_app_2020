@@ -17,9 +17,7 @@ class Detail extends React.Component{
                     <h1>{title}</h1>
                     <h4>published in {year} </h4>
                     {
-                        genres.map((genre, index) => {
-                            <span key={index} style={{marginRight:"5px"}}>{genre}</span>
-                        })
+                        genres.map((genre, index) => <span key={index} style={{marginRight:"5px"}}>{genre}</span>)
                     }
                     <img src={poster} alt={title} title={title} />
                     <br />
